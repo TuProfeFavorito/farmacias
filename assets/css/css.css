@@ -1,0 +1,327 @@
+@import url(font.css);
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,p,li,ul,ol {
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3 {
+    font-family: 'nolan';
+}
+
+header .header {
+    display: flex;
+    justify-content: end;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.x-container {
+    max-width: calc(100% - 60px);
+    margin: auto;
+}
+.logo a img {
+    display: block;
+}
+.logo a {
+    background: #fe0000;
+    padding: 18px 20px;
+    display: block;
+    border-bottom-left-radius: 25px;
+}
+.home {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.homeTop {
+    position: relative;
+    height: calc(100% - 250px);
+    background: rgb(142,142,142);
+    background: linear-gradient(328deg, rgba(142,142,142,1) 0%, rgba(255,255,255,0) 62%);
+}
+.homeTopTitle .title {
+    max-width: 370px;
+    position: relative;
+    top: 80px;
+}
+.homeTopTitle .title .categorie {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.homeTopTitle .title h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 65px;
+    margin-bottom: 20px;
+}
+.homeTopTitle .title h1 b {
+    color: #fe0000;
+}
+.homeTopTitle .title .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.girlbackground {
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    min-width: 800px;
+}
+
+.homeBot {
+    height: 250px;
+}
+
+.homeBot {
+    height: 250px;
+}
+.homeBotFlex {
+    display: flex;
+    height: 100%;
+}
+.card.card--1 {
+    background: #e7cef9;
+}
+.card {
+    width: 33.33%;
+    flex: none;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.card.card--1:before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: -250px;
+    top: 7px;
+    border: solid 75px #eddbf9;
+    z-index: -1;
+    pointer-events: none;
+}
+.card .title {
+    max-width: 250px;
+    padding: 30px;
+}
+.card .title p {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.card .title h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.card .title p.price {
+    background: #fe0000;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: white;
+}
+.card .title p.price .moneda {
+    font-size: 12px;
+}
+.card .title p.price .number {
+    font-size: 25px;
+    font-weight: 700;
+}
+.card img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 225px;
+    object-fit: cover;
+}
+.card.card--2 {
+    background: #ff9d9d;
+}
+.card.card--2:before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: -20px;
+    top: 7px;
+    border: solid 75px #f9bcbc;
+    z-index: -1;
+    pointer-events: none;
+}
+.card.card--3 {
+    background: #befffc;
+}
+.card.card--3:before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    left: -20px;
+    top: -435px;
+    border: solid 75px #ebfffe;
+    z-index: -1;
+    pointer-events: none;
+}
+.card.card--2 img {
+    width: auto;
+    height: 100%;
+}
+.card.card--3 img {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 1137px) {
+    .card img {
+        width: 175px;
+    }
+    .card.card--2 img {
+        max-width: 250px;
+        height: auto;
+    }
+    .card .title h3 {
+        font-size: 18px;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 950px) {
+    .girlbackground {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .home {
+        display: flex;
+    }
+    .homeTop {
+        height: 100%;
+        width: calc(100% - 350px);
+    }
+    .homeBot {
+        width: 100%;
+    }
+    .homeTopTitle {
+        height: 100%;
+    }
+    .homeTopTitle .x-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .homeTopTitle .title {
+        top: 50px;
+    }
+    .girlbackground {
+        position: relative;
+        width: 100%;
+    }
+    .homeBot {
+        height: 100%;
+        width: 350px;
+    }
+    .homeBotFlex {
+        display: block;
+    }
+    .card {
+        width: 100%;
+        height: 33.33%;
+    }
+    .homeTopTitle .title h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .girlbackground {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+.backgroundOnlyResponsive:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    opacity: 0.9;
+}
+.backgroundOnlyResponsive {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 690px) {
+    .girlbackground {
+        display: none;
+    }
+    .homeTopTitle .title {
+        top: 0px;
+        padding: 30px 0px;
+    }
+    .home {
+        display: block;
+    }
+    .homeTop {
+        width: 100%;
+        height: calc(100% - 200px);
+    }
+    .homeBot {
+        height: 200px;
+        width: 100%;
+    }
+    .homeTopTitle .x-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }  
+    .homeBotFlex {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }  
+    .card {
+        height: 100%;
+        width: 50%;
+    }
+    .card img {
+        display: none;
+    }
+    .card .title p {
+        font-size: 8px;
+    }
+    .card .title {
+        padding: 20px 30px;
+    }
+    .card .title h3 {
+        font-size: 14px;
+    }
+}
